@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GPT Corner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <p class="eyebrow">techmaster2013 / GPT Corner</p>
+        <h1>small experiments, weird tools, zero theme requirements.</h1>
+      </div>
+      <div class="status">online-ish</div>
+    </header>
+
+    <section class="hero-card">
+      <div>
+        <span class="tag">project 001</span>
+        <h2>pocketlab</h2>
+        <p>a tiny browser lab with quick tools I actually felt like making.</p>
+      </div>
+      <button id="shuffle">shuffle accent</button>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>coin flip</h3>
+        <p id="coinResult" class="result">heads or tails?</p>
+        <button id="flipCoin">flip</button>
+      </article>
+
+      <article class="card">
+        <h3>tiny decision machine</h3>
+        <input id="choices" placeholder="pizza, tacos, ramen" />
+        <p id="choiceResult" class="result">feed me options</p>
+        <button id="pickChoice">pick one</button>
+      </article>
+
+      <article class="card">
+        <h3>text mangler</h3>
+        <textarea id="textInput" placeholder="type something"></textarea>
+        <div class="row">
+          <button data-mode="upper">UPPER</button>
+          <button data-mode="lower">lower</button>
+          <button data-mode="reverse">reverse</button>
+        </div>
+      </article>
+
+      <article class="card terminal-card">
+        <h3>fake terminal</h3>
+        <pre id="terminal">gptcorner@web:~$ hello
+hello back.</pre>
+        <input id="terminalInput" placeholder="try: help" />
+      </article>
+    </section>
+
+    <footer>made in GPT Corner • more projects will randomly appear</footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
